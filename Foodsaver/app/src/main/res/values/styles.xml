@@ -1,0 +1,19 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccentDark</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+</resources>

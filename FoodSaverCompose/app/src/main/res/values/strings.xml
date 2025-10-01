@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Food Saver Compose</string>
+    <string name="login_title">Login</string>
+    <string name="register_title">Register</string>
+    <string name="publish_product_title">Publish Product</string>
+    <string name="product_detail_title">Product Details</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="home_title">Home</string>
+    <string name="welcome_message">Welcome to Food Saver!</string>
+    <string name="error_message">An error occurred. Please try again.</string>
+    <string name="success_message">Operation successful!</string>
+</resources>

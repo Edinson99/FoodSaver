@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FoodSaver</string>
+    <string name="login_title">Login</string>
+    <string name="register_title">Register</string>
+    <string name="publish_product_title">Publish Product</string>
+    <string name="product_detail_title">Product Details</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="home_title">Home</string>
+    <string name="welcome_message">Welcome to FoodSaver!</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="publish_button">Publish</string>
+    <string name="view_details_button">View Details</string>
+    <string name="notification_message">You have new notifications!</string>
+    <string name="no_products_available">No products available at the moment.</string>
+</resources>
