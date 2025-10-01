@@ -48,8 +48,14 @@ Categoría (frutas, verduras, lácteos, etc.).
 Estado (venta o donación).
 Ubicación.
 
+
 - [Diseño de la interfaz de usuario](docs/ui.md)
 
 <img width="508" height="686" alt="image" src="https://github.com/user-attachments/assets/ec05aee1-61d8-4797-80cd-e27c7e6e851b" />
 
 
+![1RE](https://github.com/user-attachments/assets/5daf7fa4-8383-4fdd-87f0-1ef6cc0d1a18)
+![2RE](https://github.com/user-attachments/assets/b4c8e11a-cfa6-4a5c-a5ef-8cf674aeb87b)
+![3re](https://github.com/user-attachments/assets/f6ddd136-0efc-4cc0-9b37-815315008cdd)
+![4re](https://github.com/user-attachments/assets/8e42c710-3612-4304-b61b-49f5192ddc5a)
+![5re](https://github.com/user-attachments/assets/7735dff3-014e-4a40-8d99-d354c9b5f8f1)
