@@ -3,7 +3,7 @@
 Desarrollar una aplicación móvil que conecte a fruvers, tiendas y distribuidores de alimentos con restaurantes, fundaciones, comedores comunitarios y consumidores, permitiendo la publicación de productos próximos a 
 vencerse para su venta a menor costo o su donación, con el fin de reducir el desperdicio de alimentos y generar un impacto económico, social y ambiental positivo
 
-Autor(es): CAMILA PARDO Y EDISON CACERES
+Autor(es): CAMILA PARDO Y EDINSON CACERES
 
 ## Referencias
 
