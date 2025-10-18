@@ -1,0 +1,57 @@
+name: Integration Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: foodsaver_test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Start backend
+      run: |
+        cd foodsaver-backend
+        chmod +x ./gradlew
+        ./gradlew bootRun &
+        sleep 30
+      env:
+        SPRING_PROFILES_ACTIVE: test
+        SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/foodsaver_test
+        SPRING_DATASOURCE_USERNAME: postgres
+        SPRING_DATASOURCE_PASSWORD: postgres
+        
+    - name: Wait for backend to be ready
+      run: |
+        timeout 60s bash -c 'until curl -f http://localhost:8080/actuator/health; do sleep 2; done'
+        
+    - name: Run Android instrumentation tests
+      run: |
+        cd app
+        chmod +x ./gradlew
+        ./gradlew connectedAndroidTest
