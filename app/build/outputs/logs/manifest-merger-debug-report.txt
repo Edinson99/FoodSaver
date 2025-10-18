@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\9168db35e9313135c7c4021615c30ba3\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\2d0b074be8031ad32d454ff6b59521f1\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\991a8fa79fa3daaf2aaad296e28360c5\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
@@ -69,9 +69,17 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\javie\.gradle\cache
 		INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:7:22-76
 application
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:5:5-25:19
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:5-31:19
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:5-31:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
@@ -93,41 +101,45 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ja
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] C:\Users\javie\.gradle\caches\8.13\transforms\a729d0b8908cf6daa89192c37f5c50c4\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:13:9-47
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:18:9-47
 	android:dataExtractionRules
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:12:9-65
+	android:usesCleartextTraffic
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:19:9-44
+	android:name
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:10:9-45
 activity#com.example.foodsaver.MainActivity
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:14:9-24:20
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:20:9-30:20
 	android:label
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:17:13-45
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:23:13-45
 	android:exported
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:22:13-36
 	android:theme
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:18:13-51
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:24:13-51
 	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:15:13-41
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:21:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:28:27-74
 uses-sdk
 INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml

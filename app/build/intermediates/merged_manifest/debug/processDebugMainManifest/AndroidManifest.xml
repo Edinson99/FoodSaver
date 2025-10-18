@@ -8,6 +8,10 @@
         android:minSdkVersion="31"
         android:targetSdkVersion="36" />
 
+    <!-- Agregar este permiso -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <permission
         android:name="com.example.foodsaver.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -15,6 +19,7 @@
     <uses-permission android:name="com.example.foodsaver.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
+        android:name="com.example.foodsaver.FoodsaverApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -26,7 +31,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Foodsaver" >
+        android:theme="@style/Theme.Foodsaver"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.foodsaver.MainActivity"
             android:exported="true"

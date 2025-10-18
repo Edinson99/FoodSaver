@@ -52,7 +52,7 @@ fun LoginScreen(
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFDE7A3A))
         ) {
-            Text("Entrar")
+            Text("EntraR")
         }
         TextButton(onClick = { /* Recuperar contraseña */ }) {
             Text("¿Olvidaste tu contraseña?")
