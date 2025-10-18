@@ -138,12 +138,11 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 - **Camila Pardo** - Desarrollo Frontend
 - **Edinson Cáceres** - Desarrollo Backend
-- **Javier** - Integración y Arquitectura
 
 ## 📞 Contacto
 
 Para preguntas o sugerencias, puedes contactarnos a través de:
-- Email: foodsaver.team@gmail.com
+- Email:ecaceres06@uan.edu.co
 - GitHub Issues: [Crear un issue](https://github.com/tu-usuario/foodsaver/issues)
 
 ---
