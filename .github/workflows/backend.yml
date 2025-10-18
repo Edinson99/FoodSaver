@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
         
     - name: Cache Gradle packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4  # ← ACTUALIZADO A V4
       with:
         path: |
           ~/.gradle/caches
@@ -51,7 +51,7 @@ jobs:
       working-directory: ./foodsaver-backend
       
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4  # ← ACTUALIZADO A V4
       with:
         file: ./foodsaver-backend/build/reports/jacoco/test/jacocoTestReport.xml
         flags: backend
@@ -62,7 +62,7 @@ jobs:
       working-directory: ./foodsaver-backend
       
     - name: Upload JAR
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # ← ACTUALIZADO A V4
       with:
         name: backend-jar
         path: ./foodsaver-backend/build/libs/*.jar
