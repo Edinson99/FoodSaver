@@ -32,16 +32,13 @@ jobs:
           
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
-      working-directory: ./app
-      
+
     - name: Lint check
       run: ./gradlew lintDebug
-      working-directory: ./app
       continue-on-error: true
       
     - name: Run unit tests
       run: ./gradlew testDebugUnitTest --continue
-      working-directory: ./app
       continue-on-error: true
       
     - name: Check if test results exist
@@ -64,7 +61,6 @@ jobs:
         
     - name: Build debug APK
       run: ./gradlew assembleDebug
-      working-directory: ./app
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
@@ -101,11 +97,9 @@ jobs:
           
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
-      working-directory: ./app
       
     - name: Build release APK
       run: ./gradlew assembleRelease
-      working-directory: ./app
       
     - name: Upload Release APK
       uses: actions/upload-artifact@v4
