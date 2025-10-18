@@ -23,3 +23,4 @@ rootProject.name = "Foodsaver"
 include(":app")
 include(":Foodsaver")
 project(":Foodsaver").projectDir = file("Foodsaver")
+
