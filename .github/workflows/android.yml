@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
         
     - name: Cache Gradle packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.gradle/caches
@@ -55,7 +55,7 @@ jobs:
       working-directory: ./app
       
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # ← ACTUALIZADO A V4
       with:
         name: debug-apk
         path: ./app/build/outputs/apk/debug/*.apk
@@ -76,7 +76,7 @@ jobs:
         distribution: 'temurin'
         
     - name: Cache Gradle packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4  # ← ACTUALIZADO A V4
       with:
         path: |
           ~/.gradle/caches
@@ -94,7 +94,7 @@ jobs:
       working-directory: ./app
       
     - name: Upload Release APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # ← ACTUALIZADO A V4
       with:
         name: release-apk
         path: ./app/build/outputs/apk/release/*.apk
