@@ -1,61 +1,151 @@
-··FOODSAVER
+# FOODSAVER
 
-Desarrollar una aplicación móvil que conecte a fruvers, tiendas y distribuidores de alimentos con restaurantes, fundaciones, comedores comunitarios y consumidores, permitiendo la publicación de productos próximos a 
-vencerse para su venta a menor costo o su donación, con el fin de reducir el desperdicio de alimentos y generar un impacto económico, social y ambiental positivo
+Desarrollar una aplicación móvil que conecte a fruvers, tiendas y distribuidores de alimentos con restaurantes, fundaciones, comedores comunitarios y consumidores, permitiendo la publicación de productos próximos a vencerse para su venta a menor costo o su donación, con el fin de reducir el desperdicio de alimentos y generar un impacto económico, social y ambiental positivo.
 
-Autor(es): CAMILA PARDO Y EDINSON CACERES
+**Autor(es):** CAMILA PARDO Y EDINSON CACERES
 
-## Referencias
+## 🚀 Características principales
 
-- [Ideas iniciales de proyecto](docs/ideas.md)
-- 1. Gestor de Tareas con Prioridades y Recordatorios
-Descripción: Una app para organizar tareas y proyectos, con prioridades, fechas límite, notificaciones y recordatorios.
-Funciones: CRUD de tareas, categorías, integración con calendario, notificaciones push, persistencia con Room (SQLite).
-Desafío: Manejo avanzado de bases de datos, notificaciones, UI moderna con Jetpack Compose.
-2. App de Control de Gastos Personales
-Descripción: Permite registrar ingresos y gastos, clasificar por categorías, mostrar gráficos de evolución y alertas si se pasa el presupuesto.
-Funciones: CRUD de transacciones, gráficos (MPAndroidChart), exportar datos a CSV, uso de Room.
-Desafío: Manejo de datos, gráficos, buenas prácticas en UX para entrada rápida de datos.
-3. App para Seguimiento de Hábitos
-Descripción: Permite crear hábitos, registrar progreso diario, visualizar estadísticas y enviar motivaciones.
-Funciones: Crear hábitos, check-in diario, gráficos, notificaciones.
-Desafío: Persistencia de datos, manejo de estados complejos, UX para motivar al usuario.
+- **Gestión de usuarios:** Registro como vendedores o compradores
+- **Publicación de productos:** Con información detallada y fotografías
+- **Sistema de donaciones:** Productos gratuitos para fundaciones
+- **Notificaciones en tiempo real:** Alertas de nuevos productos
+- **Búsqueda avanzada:** Filtros por categoría, ubicación y tipo
 
-4. App de Consulta de API de Clima con Mapas
-Descripción: Consulta clima actual y pronóstico en diferentes ciudades con mapa interactivo.
-Funciones: Integrar API externa (OpenWeatherMap), mostrar datos en UI, mapa con Google Maps SDK.
-Desafío: Manejo de API REST, mapas, actualización en tiempo real.
+## 📱 Tecnologías utilizadas
 
-- [Funcionalidades de la aplicación](docs/funcionalidades.md)
+### Frontend (Android)
+- **Kotlin** - Lenguaje principal
+- **Jetpack Compose** - UI moderna y declarativa
+- **Material Design 3** - Componentes de interfaz
+- **Retrofit** - Cliente HTTP para API REST
+- **Navigation Component** - Navegación entre pantallas
 
-- Gestión de usuarios
-La aplicación debe permitir el registro de usuarios como vendedores (fruvers, tiendas) o compradores/beneficiarios (restaurantes, fundaciones, comedores).
-Los usuarios deben poder iniciar sesión y cerrar sesión con credenciales seguras.
+### Backend
+- **Spring Boot** - Framework principal
+- **Kotlin** - Lenguaje del servidor
+- **JPA/Hibernate** - ORM para base de datos
+- **H2 Database** - Base de datos en desarrollo
+- **Spring Security** - Autenticación y autorización
 
-Gestión de productos
-Los vendedores deben poder publicar productos indicando: nombre, categoría, cantidad, precio (si aplica) y fotografía.
-Los productos deben poder clasificarse como venta o donación.
-Los vendedores deben poder editar o eliminar sus publicaciones.
-Los productos deben poder marcarse como vendidos o donados.
+## 🏗️ Arquitectura del proyecto
 
-Notificaciones y alertas
-La aplicación debe enviar notificaciones en tiempo real a los compradores cuando se publique un nuevo producto de interés.
-Los usuarios deben poder configurar qué tipo de notificaciones desean recibir (categoría, ubicación, tipo de producto).
+```
+📁 FoodSaver/
+├── 📁 app/ (Android)
+│   ├── 📁 src/main/java/com/example/foodsaver/
+│   │   ├── 📁 data/
+│   │   │   ├── 📁 model/        # Modelos de datos
+│   │   │   ├── 📁 network/      # APIs y DTOs
+│   │   │   └── 📁 repository/   # Repositorios
+│   │   ├── 📁 ui/               # Pantallas y componentes
+│   │   └── MainActivity.kt
+│   └── 📁 build.gradle.kts
+└── 📁 foodsaver-backend/ (Spring Boot)
+    ├── 📁 src/main/kotlin/com/foodsaver/
+    │   ├── 📁 model/            # Entidades JPA
+    │   ├── 📁 repository/       # Repositorios Spring Data
+    │   ├── 📁 service/          # Lógica de negocio
+    │   ├── 📁 controller/       # Controladores REST
+    │   └── 📁 config/           # Configuraciones
+    └── 📁 build.gradle.kts
+```
 
-Búsqueda y filtrado de productos
-Los compradores deben poder buscar y filtrar productos por:
-Categoría (frutas, verduras, lácteos, etc.).
-Estado (venta o donación).
-Ubicación.
+## 🔧 Instalación y configuración
 
+### Prerrequisitos
+- **Android Studio** (Arctic Fox o superior)
+- **IntelliJ IDEA** (para el backend)
+- **JDK 17** o superior
+- **Git**
 
-- [Diseño de la interfaz de usuario](docs/ui.md)
+### Configuración del Backend
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/foodsaver.git
+   cd foodsaver
+   ```
 
-<img width="508" height="686" alt="image" src="https://github.com/user-attachments/assets/ec05aee1-61d8-4797-80cd-e27c7e6e851b" />
+2. Abre el proyecto backend en IntelliJ IDEA:
+   ```bash
+   cd foodsaver-backend
+   ./gradlew bootRun
+   ```
 
+3. El servidor estará disponible en: `http://localhost:8080`
 
-![1RE](https://github.com/user-attachments/assets/5daf7fa4-8383-4fdd-87f0-1ef6cc0d1a18)
-![2RE](https://github.com/user-attachments/assets/b4c8e11a-cfa6-4a5c-a5ef-8cf674aeb87b)
-![3re](https://github.com/user-attachments/assets/f6ddd136-0efc-4cc0-9b37-815315008cdd)
-![4re](https://github.com/user-attachments/assets/8e42c710-3612-4304-b61b-49f5192ddc5a)
-![5re](https://github.com/user-attachments/assets/7735dff3-014e-4a40-8d99-d354c9b5f8f1)
+### Configuración del Android
+1. Abre Android Studio
+2. Importa el proyecto desde la carpeta `app/`
+3. Sincroniza Gradle
+4. Ejecuta en emulador o dispositivo
+
+## 📋 Funcionalidades implementadas
+
+### ✅ Completadas
+- [x] Pantallas de bienvenida y autenticación
+- [x] Navegación entre pantallas
+- [x] Modelos de datos (Android y Backend)
+- [x] APIs REST básicas
+- [x] Configuración de red y conectividad
+- [x] Pantalla de búsqueda con filtros
+- [x] Pantalla de publicación de productos
+
+### 🔄 En desarrollo
+- [ ] Autenticación JWT completa
+- [ ] Sistema de notificaciones
+- [ ] Chat entre usuarios
+- [ ] Reportes y estadísticas
+- [ ] Carga de imágenes
+
+### 📋 Por implementar
+- [ ] Geolocalización
+- [ ] Notificaciones push
+- [ ] Base de datos en producción
+- [ ] Tests unitarios e integración
+
+## 🌐 APIs disponibles
+
+### Usuarios
+- `POST /api/auth/login` - Iniciar sesión
+- `POST /api/auth/register` - Registrar usuario
+- `GET /api/users/{id}` - Obtener usuario por ID
+
+### Productos
+- `GET /api/products` - Listar todos los productos
+- `GET /api/products/available` - Productos disponibles
+- `POST /api/products` - Crear nuevo producto
+- `GET /api/products/search` - Buscar productos con filtros
+
+### Notificaciones
+- `GET /api/notifications/user/{userId}` - Notificaciones del usuario
+- `POST /api/notifications` - Crear notificación
+- `PUT /api/notifications/{id}/read` - Marcar como leída
+
+## 🤝 Contribuir
+
+1. Fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit tus cambios (`git commit -m 'Agrega nueva funcionalidad'`)
+4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 👥 Equipo de desarrollo
+
+- **Camila Pardo** - Desarrollo Frontend
+- **Edinson Cáceres** - Desarrollo Backend
+- **Javier** - Integración y Arquitectura
+
+## 📞 Contacto
+
+Para preguntas o sugerencias, puedes contactarnos a través de:
+- Email: foodsaver.team@gmail.com
+- GitHub Issues: [Crear un issue](https://github.com/tu-usuario/foodsaver/issues)
+
+---
+
+**FoodSaver** - Reduciendo el desperdicio de alimentos, un producto a la vez 🌱
