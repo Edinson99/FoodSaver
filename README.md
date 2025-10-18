@@ -146,5 +146,11 @@ Para preguntas o sugerencias, puedes contactarnos a través de:
 - GitHub Issues: [Crear un issue](https://github.com/tu-usuario/foodsaver/issues)
 
 ---
+# FOODSAVER
 
+[![Android CI/CD](https://github.com/tu-usuario/foodsaver/actions/workflows/android.yml/badge.svg)](https://github.com/Edinson99/foodsaver/actions/workflows/android.yml)
+[![Backend CI/CD](https://github.com/tu-usuario/foodsaver/actions/workflows/backend.yml/badge.svg)](https://github.com/Edinson99/foodsaver/actions/workflows/backend.yml)
+[![Integration Tests](https://github.com/tu-usuario/foodsaver/actions/workflows/integration.yml/badge.svg)](https://github.com/Edinson99/foodsaver/actions/workflows/integration.yml)
+
+**FoodSaver** - Reduciendo el desperdicio de alimentos, un producto a la vez 🌱
 **FoodSaver** - Reduciendo el desperdicio de alimentos, un producto a la vez 🌱
