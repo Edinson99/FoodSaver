@@ -49,7 +49,7 @@ jobs:
 
     - name: Start backend (Spring Boot) in background
       run: |
-        # Ejecutar desde la raíz usando la tarea del módulo para evitar cd a subcarpetas
+        # Start the backend using module-qualified Gradle task from repo root
         ./gradlew :foodsaver-backend:bootRun &
         echo $! > backend.pid
       env:
@@ -62,18 +62,16 @@ jobs:
       run: |
         echo "Waiting for backend /actuator/health..."
         timeout 120s bash -c 'until curl -sSf http://localhost:8080/actuator/health >/dev/null 2>&1; do sleep 2; done'
-      # si tu actuator está en otro endpoint / puerto, ajustar URL
 
-    # Start Android emulator and run instrumentation tests
     - name: Run instrumentation tests on emulator
       uses: reactivecircus/android-emulator-runner@v2
       with:
-        api-level: 31           # ajustar según necesidades del proyecto
+        api-level: 31
         target: google_apis
         arch: x86_64
         emulator-options: -no-window -no-audio
         script: |
-          # desde la raíz ejecutamos la tarea del módulo app
+          # Run connected instrumentation tests from repo root targeting the app module
           ./gradlew :app:connectedAndroidTest
 
     - name: Stop backend
