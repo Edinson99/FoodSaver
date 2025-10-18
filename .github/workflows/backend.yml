@@ -34,18 +34,18 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: Run tests
-      run: ./gradlew -p Foodsaver test
+      run: ./gradlew -p Foodsaver test --stacktrace --no-daemon
 
     - name: Generate test report
       uses: dorny/test-reporter@v1
       if: success() || failure()
       with:
         name: Backend Tests
-        path: 'Foodsaver/build/test-results/test/*.xml'
+        path: '**/build/test-results/test/*.xml'
         reporter: java-junit
 
     - name: Generate code coverage report
-      run: ./gradlew -p Foodsaver jacocoTestReport
+      run: ./gradlew -p Foodsaver jacocoTestReport --stacktrace --no-daemon
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
@@ -55,7 +55,7 @@ jobs:
         name: backend-coverage
 
     - name: Build JAR
-      run: ./gradlew -p Foodsaver bootJar
+      run: ./gradlew -p Foodsaver bootJar --stacktrace --no-daemon
 
     - name: Upload JAR
       uses: actions/upload-artifact@v4
