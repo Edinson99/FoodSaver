@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true  # Agregar esta línea
+  sql:
+    init:
+      mode: always  # Agregar esta línea
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+server:
+  port: 8080
+logging:
+  level:
+    '[org.springframework]': INFO
+    '[com.foodsaver]': DEBUG
+# Additional configurations can be added here as needed.s needed.
