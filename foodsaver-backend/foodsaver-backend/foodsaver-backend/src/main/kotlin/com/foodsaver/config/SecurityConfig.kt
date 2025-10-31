@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
 import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher
 import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
@@ -20,17 +21,17 @@ class SecurityConfig {
             .cors { it.configurationSource(corsConfigurationSource()) }
             .authorizeHttpRequests { auth ->
                 auth
+                    // CAMBIO: Usar AntPathRequestMatcher explícitamente
                     .requestMatchers(
-                        "/api/**",
-                        "/h2-console/**",
-                        "/actuator/**",
-                        "/**"  // TEMPORALMENTE permitir todo
+                        AntPathRequestMatcher("/api/**"),
+                        AntPathRequestMatcher("/h2-console/**"),
+                        AntPathRequestMatcher("/actuator/**"),
+                        AntPathRequestMatcher("/**")
                     ).permitAll()
-                    .anyRequest().permitAll()  // TEMPORALMENTE permitir todo
+                    .anyRequest().permitAll()
             }
             .headers { headers ->
-                headers
-                    .frameOptions { it.disable() }  // SIMPLIFICADO: permitir frames para H2
+                headers.frameOptions { it.disable() }  // Para H2 console
             }
 
         return http.build()
