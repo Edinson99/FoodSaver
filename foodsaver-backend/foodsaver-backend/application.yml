@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: foodsaver-backend
+  
+  # Configuración de base de datos (H2 para desarrollo)
+  datasource:
+    url: jdbc:h2:mem:foodsaver
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  
+  # Configuración JPA
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  
+  # Consola H2 para desarrollo
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# Configuración para JWT (puedes cambiar el secret)
+jwt:
+  secret: foodsaver-secret-key-2024
+  expiration: 86400000 # 24 horas en milisegundos
+
+# Configuración de logging
+logging:
+  level:
+    com.foodsaver: DEBUG
+    org.springframework.security: DEBUG

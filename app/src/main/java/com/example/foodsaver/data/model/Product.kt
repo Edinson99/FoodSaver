@@ -1,29 +1,50 @@
 package com.example.foodsaver.data.model
 
 
-import java.util.Date
+
+import com.google.gson.annotations.SerializedName
+import java.time.LocalDateTime
 
 data class Product(
-    val id: String = "",
-    val name: String,
-    val category: ProductCategory,
-    val quantity: String,
-    val price: Double? = null, // null para donaciones
-    val description: String,
-    val location: String,
-    val photoUrl: String? = null,
-    val isForSale: Boolean, // true = venta, false = donación
-    val status: ProductStatus = ProductStatus.AVAILABLE,
-    val expiryDate: Date,
-    val vendorId: String,
-    val vendorName: String,
-    val createdAt: Date = Date()
+    @SerializedName("id")
+    val id: Long = 0,
+
+    @SerializedName("name")
+    val name: String = "",
+
+    @SerializedName("category")
+    val category: String = "",
+
+    @SerializedName("quantity")
+    val quantity: String = "",
+
+    @SerializedName("price")
+    val price: Double? = null,
+
+    @SerializedName("description")
+    val description: String = "",
+
+    @SerializedName("location")
+    val location: String = "",
+
+    @SerializedName("isForSale")
+    val isForSale: Boolean = true,
+
+    @SerializedName("status")
+    val status: String = "AVAILABLE",
+
+    @SerializedName("expiryDate")
+    val expiryDate: LocalDateTime? = null,
+
+    @SerializedName("vendorId")
+    val vendorId: Long = 0,
+
+    @SerializedName("imageUrl")
+    val imageUrl: String? = null,
+
+    @SerializedName("createdAt")
+    val createdAt: LocalDateTime = LocalDateTime.now(),
+
+    @SerializedName("updatedAt")
+    val updatedAt: LocalDateTime = LocalDateTime.now()
 )
-
-enum class ProductCategory {
-    FRUTAS, VERDURAS, LACTEOS, CARNES, PANADERIA, OTROS
-}
-
-enum class ProductStatus {
-    AVAILABLE, SOLD, DONATED, EXPIRED
-}

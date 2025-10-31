@@ -1,7 +1,6 @@
 package com.example.foodsaver
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
 /**
@@ -13,5 +12,18 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+    }
+
+    @Test
+    fun string_concatenation_works() {
+        val result = "Food" + "Saver"
+        assertEquals("FoodSaver", result)
+    }
+
+    @Test
+    fun list_operations_work() {
+        val products = listOf("Tomate", "Lechuga", "Manzana")
+        assertEquals(3, products.size)
+        assertTrue(products.contains("Tomate"))
     }
 }
