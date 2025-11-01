@@ -209,8 +209,20 @@ El sistema incluye datos de prueba predefinidos:
 ### Usuarios
 - **Vendedor:** `vendor1@test.com` / `123456`
 - **Comprador:** `buyer1@test.com` / `123456`
+<img width="358" height="725" alt="Captura de pantalla 2025-09-30 224630" src="https://github.com/user-attachments/assets/718b876a-afac-4118-9ac0-a6b5ba1c4b40" />
+
+<img width="369" height="779" alt="Captura de pantalla 2025-09-30 224814" src="https://github.com/user-attachments/assets/8acf5b56-9ac5-4600-8a15-3401ce2ed481" />
+<img width="357" height="807" alt="Captura de pantalla 2025-09-30 224656" src="https://github.com/user-attachments/assets/abea830f-83e9-4d9f-a5f7-29d154db2709" />
+<img width="367" height="806" alt="Captura de pantalla 2025-09-30 224739" src="https://github.com/user-attachments/assets/934fef3d-d350-43e8-8211-ba555ae02967" />
+<img width="374" height="802" alt="Captura de pantalla 2025-09-30 224756" src="https://github.com/user-attachments/assets/0087b69a-6a72-445d-82e4-e18e9f55f738" />
+<img width="369" height="779" alt="Captura de pantalla 2025-09-30 224814" src="https://github.com/user-attachments/assets/aadd75ad-f679-46e4-8161-eb8615773ffa" />
+
+
+
+
 
 ### Productos
+
 - Tomates frescos (Venta)
 - Pan integral (Donación)
 - Leche próxima a vencer
