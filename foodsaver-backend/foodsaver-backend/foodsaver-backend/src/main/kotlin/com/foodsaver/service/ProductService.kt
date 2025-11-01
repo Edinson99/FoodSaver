@@ -7,10 +7,16 @@ import com.foodsaver.repository.ProductRepository
 import org.springframework.stereotype.Service
 
 @Service
-class ProductService(private val productRepository: ProductRepository) {
+class ProductService(
+    private val productRepository: ProductRepository
+) {
 
     fun getAllProducts(): List<Product> {
-        return productRepository.findAll()
+        return try {
+            productRepository.findAll()
+        } catch (e: Exception) {
+            emptyList()
+        }
     }
 
     fun getAvailableProducts(): List<Product> {
@@ -53,6 +59,28 @@ class ProductService(private val productRepository: ProductRepository) {
     }
 
     fun getProductById(id: Long): Product? {
-        return productRepository.findById(id).orElse(null)
+        return try {
+            productRepository.findById(id).orElse(null)
+        } catch (e: Exception) {
+            null
+        }
+    }
+
+    fun createProduct(product: Product): Product {
+        return productRepository.save(product)
+    }
+
+    fun updateProduct(id: Long, product: Product): Product? {
+        return if (productRepository.existsById(id)) {
+            productRepository.save(product.copy(id = id))
+        } else {
+            null
+        }
+    }
+
+    fun deleteProduct(id: Long) {
+        if (productRepository.existsById(id)) {
+            productRepository.deleteById(id)
+        }
     }
 }

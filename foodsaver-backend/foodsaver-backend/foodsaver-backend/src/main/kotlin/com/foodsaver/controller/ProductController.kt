@@ -1,7 +1,6 @@
 package com.foodsaver.controller
 
 import com.foodsaver.model.Product
-import com.foodsaver.model.ProductCategory
 import com.foodsaver.service.ProductService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -9,48 +8,74 @@ import org.springframework.web.bind.annotation.*
 @RestController
 @RequestMapping("/api/products")
 @CrossOrigin(origins = ["*"])
-class ProductController(private val productService: ProductService) {
+class ProductController(
+    private val productService: ProductService
+) {
+
+    @GetMapping("/test")
+    fun test(): ResponseEntity<String> {
+        return try {
+            ResponseEntity.ok("✅ Backend funcionando correctamente!")
+        } catch (e: Exception) {
+            ResponseEntity.internalServerError().body("❌ Error: ${e.message}")
+        }
+    }
 
     @GetMapping
     fun getAllProducts(): ResponseEntity<List<Product>> {
-        return ResponseEntity.ok(productService.getAllProducts())
-    }
-
-    @GetMapping("/available")
-    fun getAvailableProducts(): ResponseEntity<List<Product>> {
-        return ResponseEntity.ok(productService.getAvailableProducts())
-    }
-
-    @GetMapping("/search")
-    fun searchProducts(
-        @RequestParam(required = false) name: String? = null,
-        @RequestParam(required = false) category: String? = null,  // Recibir como String
-        @RequestParam(required = false) isForSale: Boolean? = null,
-        @RequestParam(required = false) location: String? = null
-    ): ResponseEntity<List<Product>> {
-        // Convertir String a enum si es necesario
-        val categoryEnum = category?.let {
-            try {
-                ProductCategory.valueOf(it.uppercase())
-            } catch (e: IllegalArgumentException) {
-                null
-            }
+        return try {
+            val products = productService.getAllProducts()
+            ResponseEntity.ok(products)
+        } catch (e: Exception) {
+            ResponseEntity.internalServerError().body(emptyList())
         }
-
-        return ResponseEntity.ok(
-            productService.searchProducts(name, categoryEnum, isForSale, location)
-        )
     }
 
     @GetMapping("/{id}")
     fun getProductById(@PathVariable id: Long): ResponseEntity<Product> {
-        return productService.getProductById(id)?.let {
-            ResponseEntity.ok(it)
-        } ?: ResponseEntity.notFound().build()
+        return try {
+            val product = productService.getProductById(id)
+            if (product != null) {
+                ResponseEntity.ok(product)
+            } else {
+                ResponseEntity.notFound().build()
+            }
+        } catch (e: Exception) {
+            ResponseEntity.internalServerError().build()
+        }
     }
 
-    @GetMapping("/test")
-    fun testEndpoint(): ResponseEntity<String> {
-        return ResponseEntity.ok("✅ Backend funcionando correctamente!")
+    @PostMapping
+    fun createProduct(@RequestBody product: Product): ResponseEntity<Product> {
+        return try {
+            val savedProduct = productService.createProduct(product)
+            ResponseEntity.ok(savedProduct)
+        } catch (e: Exception) {
+            ResponseEntity.internalServerError().build()
+        }
+    }
+
+    @PutMapping("/{id}")
+    fun updateProduct(@PathVariable id: Long, @RequestBody product: Product): ResponseEntity<Product> {
+        return try {
+            val updatedProduct = productService.updateProduct(id, product)
+            if (updatedProduct != null) {
+                ResponseEntity.ok(updatedProduct)
+            } else {
+                ResponseEntity.notFound().build()
+            }
+        } catch (e: Exception) {
+            ResponseEntity.internalServerError().build()
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    fun deleteProduct(@PathVariable id: Long): ResponseEntity<Void> {
+        return try {
+            productService.deleteProduct(id)
+            ResponseEntity.ok().build()
+        } catch (e: Exception) {
+            ResponseEntity.internalServerError().build()
+        }
     }
 }
