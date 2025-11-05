@@ -1,18 +1,21 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:2:1-34:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\9168db35e9313135c7c4021615c30ba3\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\2d0b074be8031ad32d454ff6b59521f1\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\991a8fa79fa3daaf2aaad296e28360c5\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\b2c1de2e6ac1ad2884b16977e887c2f1\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\ded31393d44fba10d22441bf1e959a4b\transformed\navigation-compose-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material3:material3-android:1.3.0] C:\Users\javie\.gradle\caches\8.13\transforms\0bcb1f5a294d6a45678a49d139f6bc1b\transformed\material3-release\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.material:material-ripple-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\a3328a3a6235220b7dcd1c89e94182ba\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\javie\.gradle\caches\8.13\transforms\64ccf74d6568970444cbde29a397c7c5\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\556633a420e23e9fc4920688ac139d8e\transformed\ui-tooling-data\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\6dcd7c74f71aaa5b643a309f1b1ea12e\transformed\ui-tooling-preview\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.material:material-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\0666d73798518c2b7a14755efc9e5162\transformed\material-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\a3328a3a6235220b7dcd1c89e94182ba\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.foundation:foundation-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c3bd561793db63fb808432d22ce71afa\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.foundation:foundation-layout-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\d745e3ac5b95220ba40bbb90281a2eb8\transformed\foundation-layout\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.animation:animation-core-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\70337c0882f96d3459412dfc4c69a4f1\transformed\animation-core\AndroidManifest.xml:2:1-7:12
@@ -20,12 +23,9 @@ MERGED from [androidx.compose.animation:animation-android:1.9.0] C:\Users\javie\
 MERGED from [androidx.compose.ui:ui-util-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c53265d1ffee252b8c6c59e0e811fe01\transformed\ui-util\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-unit-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\8da6f627a9f09ec8c7c2cf82b180c68d\transformed\ui-unit\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-text-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\04ee7683c433de07296dd42219a703aa\transformed\ui-text\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c0f0b90d3e6f8cf413ed3b15204fe1c5\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-geometry-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\57d7bb813241375a08969dec3cb32fac\transformed\ui-geometry\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:17:1-29:12
-MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.compose.material:material-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\0666d73798518c2b7a14755efc9e5162\transformed\material-release\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\javie\.gradle\caches\8.13\transforms\64ccf74d6568970444cbde29a397c7c5\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c0f0b90d3e6f8cf413ed3b15204fe1c5\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\javie\.gradle\caches\8.13\transforms\ba75d7e6fee8f8a11908320fae93a0af\transformed\graphics-path-1.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\javie\.gradle\caches\8.13\transforms\c77134d94e07b7e79cc6332c89f30277\transformed\emoji2-1.4.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.core:core:1.17.0] C:\Users\javie\.gradle\caches\8.13\transforms\a729d0b8908cf6daa89192c37f5c50c4\transformed\core-1.17.0\AndroidManifest.xml:17:1-30:12
@@ -78,12 +78,12 @@ ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:7:22-76
 application
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:5-31:19
-INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:5-31:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:5-32:19
+INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:9:5-32:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:22:5-27:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\javie\.gradle\caches\8.13\transforms\c77134d94e07b7e79cc6332c89f30277\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\javie\.gradle\caches\8.13\transforms\c77134d94e07b7e79cc6332c89f30277\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.17.0] C:\Users\javie\.gradle\caches\8.13\transforms\a729d0b8908cf6daa89192c37f5c50c4\transformed\core-1.17.0\AndroidManifest.xml:28:5-89
@@ -101,45 +101,45 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ja
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] C:\Users\javie\.gradle\caches\8.13\transforms\a729d0b8908cf6daa89192c37f5c50c4\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:20:9-29
 	android:icon
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:18:9-47
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:17:9-47
+	android:networkSecurityConfig
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:18:9-69
 	android:dataExtractionRules
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:11:9-65
 	android:usesCleartextTraffic
 		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:19:9-44
-	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:10:9-45
 activity#com.example.foodsaver.MainActivity
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:20:9-30:20
-	android:label
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:23:13-45
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:22:9-31:20
 	android:exported
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:24:13-36
 	android:theme
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:24:13-51
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:25:13-51
 	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:23:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml
@@ -156,12 +156,18 @@ MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\javie\.gradl
 MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\javie\.gradle\caches\8.13\transforms\ded31393d44fba10d22441bf1e959a4b\transformed\navigation-compose-2.7.7\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material3:material3-android:1.3.0] C:\Users\javie\.gradle\caches\8.13\transforms\0bcb1f5a294d6a45678a49d139f6bc1b\transformed\material3-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material3:material3-android:1.3.0] C:\Users\javie\.gradle\caches\8.13\transforms\0bcb1f5a294d6a45678a49d139f6bc1b\transformed\material3-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\a3328a3a6235220b7dcd1c89e94182ba\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\a3328a3a6235220b7dcd1c89e94182ba\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\javie\.gradle\caches\8.13\transforms\64ccf74d6568970444cbde29a397c7c5\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\javie\.gradle\caches\8.13\transforms\64ccf74d6568970444cbde29a397c7c5\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\556633a420e23e9fc4920688ac139d8e\transformed\ui-tooling-data\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\556633a420e23e9fc4920688ac139d8e\transformed\ui-tooling-data\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\6dcd7c74f71aaa5b643a309f1b1ea12e\transformed\ui-tooling-preview\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\6dcd7c74f71aaa5b643a309f1b1ea12e\transformed\ui-tooling-preview\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\0666d73798518c2b7a14755efc9e5162\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\0666d73798518c2b7a14755efc9e5162\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\a3328a3a6235220b7dcd1c89e94182ba\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\a3328a3a6235220b7dcd1c89e94182ba\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.foundation:foundation-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c3bd561793db63fb808432d22ce71afa\transformed\foundation-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.foundation:foundation-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c3bd561793db63fb808432d22ce71afa\transformed\foundation-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.foundation:foundation-layout-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\d745e3ac5b95220ba40bbb90281a2eb8\transformed\foundation-layout\AndroidManifest.xml:5:5-44
@@ -176,18 +182,12 @@ MERGED from [androidx.compose.ui:ui-unit-android:1.9.0] C:\Users\javie\.gradle\c
 MERGED from [androidx.compose.ui:ui-unit-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\8da6f627a9f09ec8c7c2cf82b180c68d\transformed\ui-unit\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-text-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\04ee7683c433de07296dd42219a703aa\transformed\ui-text\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-text-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\04ee7683c433de07296dd42219a703aa\transformed\ui-text\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c0f0b90d3e6f8cf413ed3b15204fe1c5\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c0f0b90d3e6f8cf413ed3b15204fe1c5\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-geometry-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\57d7bb813241375a08969dec3cb32fac\transformed\ui-geometry\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-geometry-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\57d7bb813241375a08969dec3cb32fac\transformed\ui-geometry\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material:material-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\0666d73798518c2b7a14755efc9e5162\transformed\material-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-android:1.7.0] C:\Users\javie\.gradle\caches\8.13\transforms\0666d73798518c2b7a14755efc9e5162\transformed\material-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\javie\.gradle\caches\8.13\transforms\64ccf74d6568970444cbde29a397c7c5\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\javie\.gradle\caches\8.13\transforms\64ccf74d6568970444cbde29a397c7c5\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c0f0b90d3e6f8cf413ed3b15204fe1c5\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\c0f0b90d3e6f8cf413ed3b15204fe1c5\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\javie\.gradle\caches\8.13\transforms\ba75d7e6fee8f8a11908320fae93a0af\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\javie\.gradle\caches\8.13\transforms\ba75d7e6fee8f8a11908320fae93a0af\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\javie\.gradle\caches\8.13\transforms\c77134d94e07b7e79cc6332c89f30277\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
@@ -258,6 +258,12 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\javie\.gradle\cache
 		INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\javie\AndroidStudioProjects\Foodsaver\app\src\main\AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:24:13-71
 activity#androidx.activity.ComponentActivity
 ADDED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:23:9-26:79
 	android:exported
@@ -266,12 +272,6 @@ ADDED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\c
 		ADDED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:26:13-76
 	android:name
 		ADDED from [androidx.compose.ui:ui-test-manifest:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\a950a618afd56a1cf80bd1b3e510075a\transformed\ui-test-manifest-1.9.0\AndroidManifest.xml:24:13-63
-activity#androidx.compose.ui.tooling.PreviewActivity
-ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
-	android:exported
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:25:13-36
-	android:name
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\javie\.gradle\caches\8.13\transforms\f3274e4dceb0acc86064caee7574ac85\transformed\ui-tooling\AndroidManifest.xml:24:13-71
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\javie\.gradle\caches\8.13\transforms\c77134d94e07b7e79cc6332c89f30277\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\javie\.gradle\caches\8.13\transforms\42d46d2d3769705ecebae8c80858c34e\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:24:9-32:20

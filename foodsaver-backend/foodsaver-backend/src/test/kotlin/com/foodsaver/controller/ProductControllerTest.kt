@@ -1,7 +1,6 @@
 package com.foodsaver.controller
 
 import com.foodsaver.model.Product
-import com.foodsaver.model.ProductCategory
 import com.foodsaver.model.ProductStatus
 import com.foodsaver.model.User
 import com.foodsaver.model.UserType

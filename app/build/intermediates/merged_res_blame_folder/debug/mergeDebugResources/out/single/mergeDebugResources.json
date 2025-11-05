@@ -40,6 +40,10 @@
         "source": "com.example.foodsaver.app-main-44:/drawable/tomato.png"
     },
     {
+        "merged": "com.example.foodsaver.app-debug-42:/xml_network_security_config.xml.flat",
+        "source": "com.example.foodsaver.app-main-44:/xml/network_security_config.xml"
+    },
+    {
         "merged": "com.example.foodsaver.app-debug-42:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.foodsaver.app-main-44:/mipmap-hdpi/ic_launcher.webp"
     },

@@ -9,33 +9,32 @@ data class User(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
-    
+
     @Column(unique = true, nullable = false)
-    val email: String,
-    
+    val email: String = "",
+
     @Column(nullable = false)
-    val password: String,
-    
+    val password: String = "",
+
     @Column(nullable = false)
-    val name: String,
-    
+    val name: String = "",
+
     @Column(nullable = false)
-    val phone: String,
-    
+    val phone: String = "",
+
     @Column(nullable = false)
-    val location: String,
-    
+    val location: String = "",
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    val userType: UserType,
-    
+    val userType: UserType = UserType.BUYER,
+
+    @Column(nullable = false)
+    val isActive: Boolean = true,
+
     @Column(nullable = false)
     val createdAt: LocalDateTime = LocalDateTime.now(),
-    
-    @Column(nullable = false)
-    val isActive: Boolean = true
-)
 
-enum class UserType {
-    VENDOR, BUYER
-}
+    @Column(nullable = false)
+    val updatedAt: LocalDateTime = LocalDateTime.now()
+)

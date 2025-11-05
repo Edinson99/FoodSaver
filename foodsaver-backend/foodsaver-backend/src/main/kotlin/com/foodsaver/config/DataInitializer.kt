@@ -64,11 +64,11 @@ class DataInitializer(
             userType = UserType.BUYER
         ))
 
-        // Crear productos de prueba
+        // Crear productos de prueba - CAMBIO: Usar enum en lugar de strings
         val products = listOf(
             Product(
                 name = "Tomates frescos",
-                category = "VERDURAS",
+                category = ProductCategory.VERDURAS,  // CAMBIO: enum en lugar de "VERDURAS"
                 quantity = "5kg",
                 price = 2000.0,
                 description = "Tomates rojos frescos, perfectos para ensaladas. Cultivados localmente sin pesticidas.",
@@ -80,7 +80,7 @@ class DataInitializer(
             ),
             Product(
                 name = "Pan integral del día",
-                category = "PANADERIA",
+                category = ProductCategory.PANADERIA,  // CAMBIO: enum
                 quantity = "10 unidades",
                 price = null,
                 description = "Pan integral horneado hoy. Ideal para donación a familias necesitadas.",
@@ -92,7 +92,7 @@ class DataInitializer(
             ),
             Product(
                 name = "Manzanas rojas",
-                category = "FRUTAS",
+                category = ProductCategory.FRUTAS,  // CAMBIO: enum
                 quantity = "3kg",
                 price = 1500.0,
                 description = "Manzanas rojas importadas, excelente calidad. Perfectas para jugos o consumo directo.",
@@ -104,7 +104,7 @@ class DataInitializer(
             ),
             Product(
                 name = "Leche próxima a vencer",
-                category = "LACTEOS",
+                category = ProductCategory.LACTEOS,  // CAMBIO: enum
                 quantity = "20 litros",
                 price = 800.0,
                 description = "Leche entera, vence en 2 días. Precio especial por pronta expiración.",
@@ -116,7 +116,7 @@ class DataInitializer(
             ),
             Product(
                 name = "Pollo asado",
-                category = "CARNES",
+                category = ProductCategory.CARNES,  // CAMBIO: enum
                 quantity = "5 unidades",
                 price = null,
                 description = "Pollos asados del día anterior. Donación para comedores comunitarios.",
@@ -128,7 +128,7 @@ class DataInitializer(
             ),
             Product(
                 name = "Bananos maduros",
-                category = "FRUTAS",
+                category = ProductCategory.FRUTAS,  // CAMBIO: enum
                 quantity = "10kg",
                 price = 500.0,
                 description = "Bananos muy maduros, ideales para batidos y postres. Precio especial.",

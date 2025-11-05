@@ -1,87 +1,86 @@
 package com.foodsaver.service
 
 import com.foodsaver.model.Product
+import com.foodsaver.model.ProductCategory
 import com.foodsaver.model.ProductStatus
 import com.foodsaver.repository.ProductRepository
 import org.springframework.stereotype.Service
-import java.time.LocalDateTime
 
 @Service
 class ProductService(
     private val productRepository: ProductRepository
 ) {
-    
+
     fun getAllProducts(): List<Product> {
-        return productRepository.findAll()
+        return try {
+            productRepository.findAll()
+        } catch (e: Exception) {
+            emptyList()
+        }
     }
-    
+
     fun getAvailableProducts(): List<Product> {
-        return productRepository.findAvailableProducts()
+        return productRepository.findByStatus(ProductStatus.AVAILABLE)
     }
-    
-    fun createProduct(product: Product): Product {
-        return productRepository.save(product.copy(
-            createdAt = LocalDateTime.now(),
-            updatedAt = LocalDateTime.now(),
-            status = ProductStatus.AVAILABLE
-        ))
-    }
-    
+
     fun searchProducts(
         name: String? = null,
-        category: String? = null,
+        category: ProductCategory? = null,  // CAMBIO: usar enum
         isForSale: Boolean? = null,
         location: String? = null
     ): List<Product> {
-        return productRepository.searchProducts(name, category, isForSale, location)
+        return when {
+            name != null && category != null && isForSale != null ->
+                productRepository.findByNameContainingIgnoreCaseAndCategoryAndIsForSaleAndStatus(
+                    name, category, isForSale, ProductStatus.AVAILABLE
+                )
+            name != null && category != null ->
+                productRepository.findByNameContainingIgnoreCaseAndCategoryAndStatus(
+                    name, category, ProductStatus.AVAILABLE
+                )
+            name != null && isForSale != null ->
+                productRepository.findByNameContainingIgnoreCaseAndIsForSaleAndStatus(
+                    name, isForSale, ProductStatus.AVAILABLE
+                )
+            category != null && isForSale != null ->
+                productRepository.findByCategoryAndIsForSaleAndStatus(
+                    category, isForSale, ProductStatus.AVAILABLE
+                )
+            name != null ->
+                productRepository.findByNameContainingIgnoreCaseAndStatus(
+                    name, ProductStatus.AVAILABLE
+                )
+            category != null ->
+                productRepository.findByCategoryAndStatus(category, ProductStatus.AVAILABLE)
+            isForSale != null ->
+                productRepository.findByIsForSaleAndStatus(isForSale, ProductStatus.AVAILABLE)
+            else -> getAvailableProducts()
+        }
     }
-    
-    fun getProductsByVendor(vendorId: Long): List<Product> {
-        return productRepository.findByVendorId(vendorId)
+
+    fun getProductById(id: Long): Product? {
+        return try {
+            productRepository.findById(id).orElse(null)
+        } catch (e: Exception) {
+            null
+        }
     }
-    
-    fun findById(id: Long): Product? {
-        return productRepository.findById(id).orElse(null)
+
+    fun createProduct(product: Product): Product {
+        return productRepository.save(product)
     }
-    
-    fun updateProduct(id: Long, updatedProduct: Product): Product? {
+
+    fun updateProduct(id: Long, product: Product): Product? {
         return if (productRepository.existsById(id)) {
-            productRepository.save(updatedProduct.copy(
-                id = id,
-                updatedAt = LocalDateTime.now()
-            ))
+            productRepository.save(product.copy(id = id))
         } else {
             null
         }
     }
-    
-    fun deleteProduct(id: Long): Boolean {
-        return if (productRepository.existsById(id)) {
+
+    fun deleteProduct(id: Long) {
+        if (productRepository.existsById(id)) {
             productRepository.deleteById(id)
-            true
-        } else {
-            false
         }
-    }
-    
-    fun updateProductStatus(id: Long, status: ProductStatus): Product? {
-        val product = findById(id)
-        return if (product != null) {
-            updateProduct(id, product.copy(status = status))
-        } else {
-            null
-        }
-    }
-    
-    fun getExpiringProducts(): List<Product> {
-        return productRepository.findExpiringProducts()
-    }
-    
-    fun getProductsByCategory(category: String): List<Product> {
-        return productRepository.findByCategory(category)
-    }
-    
-    fun getProductsByType(isForSale: Boolean): List<Product> {
-        return productRepository.findByIsForSale(isForSale)
     }
 }

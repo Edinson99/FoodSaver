@@ -9,32 +9,26 @@ data class Notification(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
-    
+
     @Column(nullable = false)
-    val userId: Long,
-    
-    @Column(nullable = false)
-    val title: String,
-    
-    @Column(nullable = false)
-    val message: String,
-    
+    val title: String = "",
+
+    @Column(length = 1000, nullable = false)
+    val message: String = "",
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    val type: NotificationType,
-    
-    val productId: Long? = null,
-    
-    @Column(nullable = false)
-    val timestamp: LocalDateTime = LocalDateTime.now(),
-    
-    @Column(nullable = false)
-    val isRead: Boolean = false
-)
+    val type: NotificationType = NotificationType.GENERAL,
 
-enum class NotificationType {
-    PRODUCT_EXPIRING,
-    PRODUCT_INTEREST,
-    PURCHASE_CONFIRMATION,
-    SYSTEM_NOTIFICATION
-}
+    @Column(nullable = false)
+    val userId: Long = 0,
+
+    @Column
+    val productId: Long? = null,
+
+    @Column(nullable = false)
+    val isRead: Boolean = false,
+
+    @Column(nullable = false)
+    val createdAt: LocalDateTime = LocalDateTime.now()
+)

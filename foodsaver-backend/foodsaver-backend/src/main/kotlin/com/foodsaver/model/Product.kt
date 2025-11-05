@@ -9,49 +9,45 @@ data class Product(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
-    
+
     @Column(nullable = false)
-    val name: String,
-    
-    @Enumerated(EnumType.STRING)
+    val name: String = "",
+
+    @Enumerated(EnumType.STRING)  // CAMBIO: Usar enum en lugar de String
     @Column(nullable = false)
-    val category: ProductCategory,
-    
+    val category: ProductCategory = ProductCategory.OTROS,
+
     @Column(nullable = false)
-    val quantity: String,
-    
-    val price: Double?,
-    
+    val quantity: String = "",
+
+    @Column
+    val price: Double? = null,
+
+    @Column(length = 1000)
+    val description: String = "",
+
     @Column(nullable = false)
-    val description: String,
-    
+    val location: String = "",
+
     @Column(nullable = false)
-    val location: String,
-    
-    val photoUrl: String?,
-    
-    @Column(nullable = false)
-    val isForSale: Boolean,
-    
+    val isForSale: Boolean = true,
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     val status: ProductStatus = ProductStatus.AVAILABLE,
-    
+
+    @Column
+    val expiryDate: LocalDateTime? = null,
+
     @Column(nullable = false)
-    val expiryDate: LocalDateTime,
-    
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "vendor_id", nullable = false)
-    val vendor: User,
-    
+    val vendorId: Long = 0,
+
+    @Column
+    val imageUrl: String? = null,
+
     @Column(nullable = false)
-    val createdAt: LocalDateTime = LocalDateTime.now()
+    val createdAt: LocalDateTime = LocalDateTime.now(),
+
+    @Column(nullable = false)
+    val updatedAt: LocalDateTime = LocalDateTime.now()
 )
-
-enum class ProductCategory {
-    FRUTAS, VERDURAS, LACTEOS, CARNES, PANADERIA, OTROS
-}
-
-enum class ProductStatus {
-    AVAILABLE, SOLD, DONATED, EXPIRED
-}

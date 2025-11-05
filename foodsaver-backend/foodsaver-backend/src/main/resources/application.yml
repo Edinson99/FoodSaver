@@ -1,25 +1,36 @@
+server:
+  port: 8091  # Cambiar de 8080 a 8091
+  address: 0.0.0.0
+
 spring:
+  application:
+    name: foodsaver-backend
+  
   datasource:
     url: jdbc:h2:mem:testdb
     username: sa
-    password: password
+    password: 
     driver-class-name: org.h2.Driver
+  
   jpa:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
-    defer-datasource-initialization: true  # Agregar esta línea
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+  
   sql:
     init:
-      mode: always  # Agregar esta línea
+      mode: always
+  
   h2:
     console:
       enabled: true
       path: /h2-console
-server:
-  port: 8080
+
 logging:
   level:
     '[org.springframework]': INFO
     '[com.foodsaver]': DEBUG
-# Additional configurations can be added here as needed.s needed.

@@ -1,14 +1,13 @@
 package com.foodsaver.repository
 
 import com.foodsaver.model.User
+import com.foodsaver.model.UserType
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
-import java.util.Optional
 
 @Repository
 interface UserRepository : JpaRepository<User, Long> {
-    fun findByEmail(email: String): Optional<User>
-    fun existsByEmail(email: String): Boolean
-    fun findByName(name: String): List<User>
-    fun findByLocation(location: String): List<User>
+    fun findByEmail(email: String): User?
+    fun findByUserType(userType: UserType): List<User>
+    fun existsByEmail(email: String): Boolean  // ESTE MÉTODO ES IMPORTANTE
 }

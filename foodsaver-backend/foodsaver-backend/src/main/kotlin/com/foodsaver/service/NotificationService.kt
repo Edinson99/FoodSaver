@@ -16,7 +16,7 @@ class NotificationService(
     }
     
     fun getUnreadNotifications(userId: Long): List<Notification> {
-        return notificationRepository.findByUserIdAndIsReadOrderByCreatedAtDesc(userId, false)
+        return notificationRepository.findByUserIdAndIsReadFalse(userId)
     }
     
     fun createNotification(notification: Notification): Notification {
