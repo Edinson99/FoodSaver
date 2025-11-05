@@ -207,6 +207,7 @@ cd Foodsaver/app
 El sistema incluye datos de prueba predefinidos:
 
 ### Usuarios
+-Prueba local : 'persona' / '12345'
 - **Vendedor:** `vendor1@test.com` / `123456`
 - **Comprador:** `buyer1@test.com` / `123456`
 <img width="358" height="725" alt="Captura de pantalla 2025-09-30 224630" src="https://github.com/user-attachments/assets/718b876a-afac-4118-9ac0-a6b5ba1c4b40" />
