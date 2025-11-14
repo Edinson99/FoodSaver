@@ -326,4 +326,6 @@ Para preguntas o sugerencias, puedes contactarnos a través de:
 [![Integration Tests](https://github.com/tu-usuario/foodsaver/actions/workflows/integration.yml/badge.svg)](https://github.com/Edinson99/foodsaver/actions/workflows/integration.yml)
 
 **FoodSaver** - Reduciendo el desperdicio de alimentos, un producto a la vez 🌱
-**FoodSaver** - Reduciendo el desperdicio de alimentos, un producto a la vez 🌱
+**PRESENTACION DEL PROYECTO**
+[FOOD SAVER PRESENTACIÓN.pptx](https://github.com/user-attachments/files/23538431/FOOD.SAVER.PRESENTACION.pptx)
+
